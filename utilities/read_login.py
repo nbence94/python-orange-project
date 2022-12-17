@@ -6,8 +6,6 @@ config.read(r'..\Configuration\config.ini')
 
 class ReadConfig:
 
-    print(">> " + str(config.sections()))
-
     @staticmethod
     def get_url():
         url = config.get('common info', 'url')
